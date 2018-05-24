@@ -3,12 +3,7 @@ package LinkedList_A1;
 public class LinkedListPlayground {
 
   public static void main(String[] args) {
-    /*
-     * here you can instantiate your LinkedList and play around with it to check
-     * correctness. We've graciously also provided you a bit of extra test data
-     * for debugging. It doesn't matter what you have in here. We will not grade
-     * it. This is for your use in testing your implementation.
-     */
+
 //     test1();
 //    test2();
     test3();
@@ -83,13 +78,9 @@ public class LinkedListPlayground {
   }
   
 
-  public static void printList(LinkedListImpl L) { // note that this is a good
-                                                   // example of how to iterate
-                                                   // through your linked list
+  public static void printList(LinkedListImpl L) { 
     Node curr = L.root;
-    for (int i = -1; i < L.size(); i++) { // -1 b/c the 0th node in list is the
-                                          // one after root. Root is just the
-                                          // entry point!
+    for (int i = -1; i < L.size(); i++) { 
       System.out.print(curr.data + " --> ");
       curr = curr.next;
     }
